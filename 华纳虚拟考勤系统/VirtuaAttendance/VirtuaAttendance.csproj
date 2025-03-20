@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C58D593C-D771-4A5B-9C80-E7E477CFC554}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VirtuaAttendance</RootNamespace>
+    <AssemblyName>华纳研发考勤系统</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://192.168.30.250/VirtuaAttendance/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>huana_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2FB388190FE8FF4EFFAD993229055A6247BAA437</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>VirtuaAttendance_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>VirtuaAttendance.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.Data.v20.1" />
+    <Reference Include="DevExpress.Images.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attendance\OnWorkRecForProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance\OnWorkRecForProject.Designer.cs">
+      <DependentUpon>OnWorkRecForProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\OnWorkRecAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance\OnWorkRecAdd.Designer.cs">
+      <DependentUpon>OnWorkRecAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\LeaveRec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance\LeaveRec.Designer.cs">
+      <DependentUpon>LeaveRec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\OnWorkRecForProjectAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance\OnWorkRecForProjectAdd.Designer.cs">
+      <DependentUpon>OnWorkRecForProjectAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\OnWorkRecForTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance\OnWorkRecForTest.Designer.cs">
+      <DependentUpon>OnWorkRecForTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\OnWorkRecForTestAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance\OnWorkRecForTestAdd.Designer.cs">
+      <DependentUpon>OnWorkRecForTestAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AccessController.cs" />
+    <Compile Include="Common\ComboxData.cs" />
+    <Compile Include="JiandaoyunAPI\ProjectMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JiandaoyunAPI\ProjectMembers.designer.cs">
+      <DependentUpon>ProjectMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JiandaoyunAPI\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JiandaoyunAPI\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JiandaoyunAPI\Projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JiandaoyunAPI\Projects.Designer.cs">
+      <DependentUpon>Projects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JiandaoyunAPI\ProjectTestMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JiandaoyunAPI\ProjectTestMembers.Designer.cs">
+      <DependentUpon>ProjectTestMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptAllMembersAttenStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptAllMembersAttenStat.Designer.cs">
+      <DependentUpon>RptAllMembersAttenStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptSocialSecurityDistribution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptSocialSecurityDistribution.Designer.cs">
+      <DependentUpon>RptSocialSecurityDistribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptWageDistribution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptWageDistribution.designer.cs">
+      <DependentUpon>RptWageDistribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptOnWorkRecForProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptOnWorkRecForProject.Designer.cs">
+      <DependentUpon>RptOnWorkRecForProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptOnWorkRecForTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptOnWorkRecForTest.Designer.cs">
+      <DependentUpon>RptOnWorkRecForTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptWorkForProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptWorkForProject.Designer.cs">
+      <DependentUpon>RptWorkForProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptWorkForTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptWorkForTest.Designer.cs">
+      <DependentUpon>RptWorkForTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptYearAttenStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptYearAttenStat.Designer.cs">
+      <DependentUpon>RptYearAttenStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysManage\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysManage\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysManage\SysLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysManage\SysLog.designer.cs">
+      <DependentUpon>SysLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SharePro.cs" />
+    <Compile Include="SysManage\SysUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysManage\SysUser.designer.cs">
+      <DependentUpon>SysUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\OnWorkRec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance\OnWorkRec.designer.cs">
+      <DependentUpon>OnWorkRec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\SqlHelper.cs" />
+    <Compile Include="Common\User.cs" />
+    <EmbeddedResource Include="Attendance\OnWorkRecForProject.resx">
+      <DependentUpon>OnWorkRecForProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendance\OnWorkRecAdd.resx">
+      <DependentUpon>OnWorkRecAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendance\LeaveRec.resx">
+      <DependentUpon>LeaveRec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendance\OnWorkRecForProjectAdd.resx">
+      <DependentUpon>OnWorkRecForProjectAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendance\OnWorkRecForTest.resx">
+      <DependentUpon>OnWorkRecForTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendance\OnWorkRecForTestAdd.resx">
+      <DependentUpon>OnWorkRecForTestAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JiandaoyunAPI\ProjectMembers.resx">
+      <DependentUpon>ProjectMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JiandaoyunAPI\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JiandaoyunAPI\Projects.resx">
+      <DependentUpon>Projects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JiandaoyunAPI\ProjectTestMembers.resx">
+      <DependentUpon>ProjectTestMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptAllMembersAttenStat.resx">
+      <DependentUpon>RptAllMembersAttenStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSocialSecurityDistribution.resx">
+      <DependentUpon>RptSocialSecurityDistribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptWageDistribution.resx">
+      <DependentUpon>RptWageDistribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptOnWorkRecForProject.resx">
+      <DependentUpon>RptOnWorkRecForProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptOnWorkRecForTest.resx">
+      <DependentUpon>RptOnWorkRecForTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptWorkForProject.resx">
+      <DependentUpon>RptWorkForProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptWorkForTest.resx">
+      <DependentUpon>RptWorkForTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptYearAttenStat.resx">
+      <DependentUpon>RptYearAttenStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\SysLog.resx">
+      <DependentUpon>SysLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\SysUser.resx">
+      <DependentUpon>SysUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendance\OnWorkRec.resx">
+      <DependentUpon>OnWorkRec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VirtuaAttendance_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="huana_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.BonusSkins.v20.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v20.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Images.v20.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Office.v20.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v20.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v20.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Sparkline.v20.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v20.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpo.v20.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v20.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v20.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v20.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v20.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v20.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v20.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
