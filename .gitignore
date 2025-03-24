@@ -1,0 +1,6 @@
+# 忽略所有编译生成的二进制文件
+HuayaoT+/bin/
+HuayaoT+/obj/
+
+MakeT+Voucher/bin/
+MakeT+Voucher/obj/
