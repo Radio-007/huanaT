@@ -126,9 +126,8 @@
             " ",
             "华耀出库单-录入",
             "华耀出库单-修改",
-            "上角山出库单-录入",
-            "上角山出库单-修改",
             "增值税开票-录入",
+            "增值税开票-修改",
             "删除多余的数据"});
             this.cmbFormName.Location = new System.Drawing.Point(98, 261);
             this.cmbFormName.Margin = new System.Windows.Forms.Padding(2);

@@ -421,15 +421,15 @@ namespace HuayaoT
             {
                 this.AddSaleDetailFromApi(2, "huayao_fh", true, startDate, endDate);
             }
-            else if (currentDate.ToLongTimeString() == "13:20:00" || currentDate.ToLongTimeString() == "20:10:00")
-            {
-                this.AddSaleDetailFromApi_sjs(1, "sjs_fh", true, startDate, endDate);
-                rTxtLog.AppendText("\n上角山出库单-录入，" + currentDate.ToString());
-            }
-            else if (currentDate.ToLongTimeString() == "13:30:00" || currentDate.ToLongTimeString() == "20:20:00")
-            {
-                this.AddSaleDetailFromApi_sjs(2, "sjs_fh", true, startDate, endDate);
-            }
+            //else if (currentDate.ToLongTimeString() == "13:20:00" || currentDate.ToLongTimeString() == "20:10:00")
+            //{
+            //    this.AddSaleDetailFromApi_sjs(1, "sjs_fh", true, startDate, endDate);
+            //    rTxtLog.AppendText("\n上角山出库单-录入，" + currentDate.ToString());
+            //}
+            //else if (currentDate.ToLongTimeString() == "13:30:00" || currentDate.ToLongTimeString() == "20:20:00")
+            //{
+            //    this.AddSaleDetailFromApi_sjs(2, "sjs_fh", true, startDate, endDate);
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -453,22 +453,27 @@ namespace HuayaoT
             else if (cmbFormName.Text == "华耀出库单-修改")
             {
                 this.AddSaleDetailFromApi(2, "huayao_fh", false, startDate, endDate);
-                this.AddSaleDetailFromApi_sjs(2, "huayao_fh", false, startDate, endDate);
+                //this.AddSaleDetailFromApi_sjs(2, "huayao_fh", false, startDate, endDate);
                 MessageBox.Show("简道云API获取数据成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (cmbFormName.Text == "上角山出库单-录入")
-            {
-                this.AddSaleDetailFromApi_sjs(1, "sjs_fh", false, startDate, endDate);
-                MessageBox.Show("简道云API获取数据成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (cmbFormName.Text == "上角山出库单-修改")
-            {
-                this.AddSaleDetailFromApi_sjs(2, "sjs_fh", false, startDate, endDate);
-                MessageBox.Show("简道云API获取数据成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            //if (cmbFormName.Text == "上角山出库单-录入")
+            //{
+            //    this.AddSaleDetailFromApi_sjs(1, "sjs_fh", false, startDate, endDate);
+            //    MessageBox.Show("简道云API获取数据成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+            //else if (cmbFormName.Text == "上角山出库单-修改")
+            //{
+            //    this.AddSaleDetailFromApi_sjs(2, "sjs_fh", false, startDate, endDate);
+            //    MessageBox.Show("简道云API获取数据成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
             else if (cmbFormName.Text == "增值税开票-录入")
             {
                 this.AddInvoicedFromApi(1, "huayao_invoiced", false, startDate, endDate);
+                MessageBox.Show("简道云API获取数据成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (cmbFormName.Text == "增值税开票-修改")
+            {
+                this.AddInvoicedFromApi(2, "huayao_invoiced", false, startDate, endDate);
                 MessageBox.Show("简道云API获取数据成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (cmbFormName.Text == "删除多余的数据")
